@@ -1,0 +1,51 @@
+#Button1 {
+    background-color: lightgreen;
+    border-colour: 2px solid red;
+    border-radius: 25%;
+    background: #73AD21;
+    padding: 20px;
+    width: 100px;
+    height: 50px;
+    background-image: linear-gradient(to right, #9A98B5 , #FF5154);
+}
+
+#Button2 {
+    background-color: lightgreen;
+    border-radius: 10px;
+    background: #73AD21;
+    padding: 20px;
+    width: 100px;
+    height: 50px;
+    
+}
+
+#Button3 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#Button3:hover {background-color: #3e8e41}
+
+#Button3:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#Head {
+    color:Tomato;
+}
+
+#Print {
+    color: Orange;
+}
