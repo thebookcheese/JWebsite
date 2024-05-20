@@ -1,0 +1,7 @@
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Comic Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('COMIC.TTF') format('truetype')
+  }

@@ -1,3 +1,5 @@
+@import url("assets/fonts/comicsans.css");
+
 #Button1 {
     background-color: lightgreen;
     border-colour: 2px solid red;
@@ -72,6 +74,6 @@
 }
 
 #Intro {
-    font-family: "Aclonica", sans-serif;
+    font-family: "Comic Sans", sans-serif;
     text-align: center;
 }
