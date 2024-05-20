@@ -31,14 +31,17 @@ function Function2() {
     }
 }
 function Function4() {
+    let Attempt = 0
     let Num = Math.floor(Math.random()*101)
     let UserNum = prompt("Guess Number")
     while (UserNum != Num) {
         if (UserNum > Num) {
+            Attempt = Attempt + 1
             UserNum = prompt("Num is smaller than "+UserNum)
         } else {
+            Attempt = Attempt + 1
             UserNum = prompt("Num is larger than "+UserNum)
         }
     }
-    alert("Correct!")
+    alert("Correct! You got it in "+Attempt+" attempts")
 }
