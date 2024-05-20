@@ -79,7 +79,9 @@
 }
 
 #Transition {
-    background-colour: lime;
+    height: 100px;
+    width: 100px;
+    background-colour: lightblue;
     transition: width 2s;
 }
 
