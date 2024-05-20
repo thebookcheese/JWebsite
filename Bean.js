@@ -30,3 +30,15 @@ function Function2() {
             document.getElementById("Button2").style.backgroundColor = "#A1DD70";
     }
 }
+function Function4() {
+    let Num = Math.floor(Math.random()*101)
+    let UserNum = prompt("Guess Number")
+    while (UserNum != Num) {
+        if (UserNum > Num) {
+            prompt("Num is smaller than ",UserNum)
+        } else {
+            prompt("Num is larger than ",UserNum)
+        }
+    }
+    alert("Correct!")
+}
