@@ -58,16 +58,20 @@
 }
 #Tex {
     font-family: "Agbalumo", system-ui;
+    text-align: center;
 }
 
 #Print {
     font-family: "Jersey 25 Charted", sans-serif;
+    text-align: center;
 }
 
 #Paragraph1 {
     font-family: "Aclonica", sans-serif;
+    text-align: center;
 }
 
 #Intro {
     font-family: "Aclonica", sans-serif;
+    text-align: center;
 }
