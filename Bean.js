@@ -35,9 +35,9 @@ function Function4() {
     let UserNum = prompt("Guess Number")
     while (UserNum != Num) {
         if (UserNum > Num) {
-            prompt("Num is smaller than "+UserNum)
+            UserNum = prompt("Num is smaller than "+UserNum)
         } else {
-            prompt("Num is larger than "+UserNum)
+            UserNum = prompt("Num is larger than "+UserNum)
         }
     }
     alert("Correct!")
