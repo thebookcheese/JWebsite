@@ -77,3 +77,12 @@
     font-family: "Comic Sans", sans-serif;
     text-align: center;
 }
+
+#Transition {
+    background-colour: lime;
+    transition: width 2s;
+}
+
+#Transition:hover {
+    width: 300px;
+}
