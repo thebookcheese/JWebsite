@@ -45,3 +45,7 @@ function Function4() {
     }
     alert("Correct! You got it in "+Attempt+" attempts")
 }
+
+function CSSFunction1() {
+    document.getElementById("Transition").innerHTML += " See, it works!"
+}
