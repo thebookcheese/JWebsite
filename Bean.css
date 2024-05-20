@@ -81,7 +81,7 @@
 #Transition {
     height: 100px;
     width: 100px;
-    background-colour: lightblue;
+    background: lightblue;
     transition: width 2s;
 }
 
