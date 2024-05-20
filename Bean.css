@@ -49,3 +49,21 @@
 #Print {
     color: Orange;
 }
+
+#Head {
+    text-decoration-line: underline overline;
+    font-family: "Jacquard 12", system-ui;
+    text-shadow: 2px 2px lightblue;
+    font-size: 40px;
+}
+#Tex {
+    font-family: "Agbalumo", system-ui;
+}
+
+#Print {
+    font-family: "Jersey 25 Charted", sans-serif;
+}
+
+#Paragraph1 {
+    font-family: "Aclonica", sans-serif;
+}
