@@ -46,6 +46,11 @@ function Function4() {
     alert("Correct! You got it in "+Attempt+" attempts")
 }
 
+let attempt = 0
 function CSSFunction1() {
-    document.getElementById("Transition2").innerHTML += " See, it works!";
+    if (attempt >= 1) {
+        pass
+    } else {
+        document.getElementById("Transition2").innerHTML += " See, it works!";
+    }
 }
