@@ -2,7 +2,8 @@
 
 #Button1 {
     background-color: lightgreen;
-    border-colour: 2px solid red;
+    border-style: solid;
+    border-color: red;
     border-radius: 25%;
     background: #73AD21;
     padding: 20px;
@@ -82,11 +83,20 @@
     height: 80px;
     width: 50px;
     background: lightblue;
-    transition: width 2s;
+    transition: width 2s, height 3s;
 }
 
 #Transition:hover {
     width: 300px;
 }
 
+#Transition::after {
+    height: 300px;
+}
 
+#Transition2 {
+    height: 80px;
+    width: 50px;
+    background: lime;
+    transition: width 5s;
+}
