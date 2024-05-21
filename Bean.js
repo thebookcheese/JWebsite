@@ -47,5 +47,5 @@ function Function4() {
 }
 
 function CSSFunction1() {
-    document.getElementById("Transition").innerHTML = "See, it works!";
+    document.getElementById("Transition").innerHTML += "See, it works!";
 }
