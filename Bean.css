@@ -88,15 +88,18 @@
 
 #Transition:hover {
     width: 300px;
-}
-
-#Transition::after {
+    transition-delay: 1s;
     height: 300px;
 }
+
 
 #Transition2 {
     height: 80px;
     width: 50px;
     background: lime;
     transition: width 5s;
+}
+
+#Transition2:hover {
+    width: 400px
 }
