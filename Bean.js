@@ -49,8 +49,8 @@ function Function4() {
 let attempt = 0
 function CSSFunction1() {
     if (attempt >= 1) {
-        pass
     } else {
         document.getElementById("Transition2").innerHTML += " See, it works!";
+        attempt = attempt + 1;
     }
 }
