@@ -99,7 +99,7 @@
 
 #Transition2 {
     height: 80px;
-    width: 50px;
+    width: 75px;
     background: lime;
     transition: width 5s;
 }
