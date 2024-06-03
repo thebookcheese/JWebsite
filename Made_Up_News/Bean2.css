@@ -50,3 +50,8 @@ html {
     font-style: italic;
   }
   
+  #Astano {
+    height: 100px;
+    width: 75px;
+    background: lightcoral;
+  }
