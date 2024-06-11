@@ -17,6 +17,17 @@ function Travel() {
     }
 }
 
+// Peter House Enemy Stats and Attacks
+
+// Peter Stats and Attacks
+var PeHealth = 25
+var PeAttack = 4
+var PeDodgeChance = 3
+
+
+function CodingFlex() {
+    damage = Math. random() * (5 - 3) + 3
+}
 
 // Peter House Location Functions
 const PHouseEnemys = ["Peter Dad", "Peter"];
