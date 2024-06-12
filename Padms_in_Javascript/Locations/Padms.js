@@ -37,7 +37,7 @@ function PeterHouseEnemyGet() {
 }
 
 function PeterHouseFight() {
-    document.getElementById("PeterHouseRun").innerHTML = <button onclick="Slash">Slash</button>;
+    document.getElementById("PeterHouseRun").innerHTML = `<button onclick="Slash">Slash</button>`;
     const newButton = document.createElement('button');
     newButton.textContent = 'Block';
     document.body.appendChild(newButton);
