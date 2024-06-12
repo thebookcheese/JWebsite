@@ -2,12 +2,12 @@ var Enemy =""; // Define Enemy (Used in Locations to get the enemy)
 
 // Define Player Stats and Attacks
 function Slash() {
-    alert("WIP")
+    alert("WIP");
 }
 
 // Town Functions
 function Travel() {
-    var WhereTravel = prompt("Where do you want to go; \n Creepy Cave (1) \n Peter House (2)")
+    var WhereTravel = prompt("Where do you want to go; \n Creepy Cave (1) \n Peter House (2)");
     if (WhereTravel == "1") {
         window.location.href = "https://jasperweb.pages.dev/Padms_in_Javascript/Locations/Creepy_Cave";
     } else if (WhereTravel == "2") {
@@ -20,13 +20,13 @@ function Travel() {
 // Peter House Enemy Stats and Attacks
 
 // Peter Stats and Attacks
-var PeHealth = 25
-var PeAttack = 4
-var PeDodgeChance = 3
+var PeHealth = 25;
+var PeAttack = 4;
+var PeDodgeChance = 3;
 
 
 function CodingFlex() {
-    damage = Math. random() * (5 - 3) + 3
+    damage = Math. random() * (5 - 3) + 3;
 }
 
 // Peter House Location Functions
