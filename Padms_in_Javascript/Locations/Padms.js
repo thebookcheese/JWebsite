@@ -13,7 +13,7 @@ function Slash() {
         Dodge = Math.random() * 100;
         if (Dodge > PeDodgeChance) { // Works out if Peter dodges or not
             PeHealth_Battle = PeHealth_Battle - PDamage; // If no dodge take damage
-            document.getElementById("EnemyHealthShow").innerHTML = "EnemyHealth is"+PeHealth_Battle;
+            document.getElementById("EnemyHealthShow").innerHTML += "EnemyHealth is"+PeHealth_Battle;
             CodingFlex()
         } else {
             console.log("pass"); // Funny Pass
@@ -50,14 +50,14 @@ var PeHealth_Battle = 25;
 function CodingFlex() {
     PeDamage = Math. random() * (5 - 3) + 3; // Attack = 4 (Damage is between +1 and -1)
     PHealth = PHealth - PeDamage;
-    document.getElementById("PHealthShow").innerHTML = "Your health is"+PHealth;
+    document.getElementById("PHealthShow").innerHTML += "Your health is"+PHealth;
 }
 
 // Peter House Location Functions
 const PHouseEnemys = ["Peter Dad", "Peter"];
 function PeterHouseEnemyGet() {
     Enemy = Math.floor((Math.random()) * 3 );
-    document.getElementById("EnemyGet").innerHTML = "The enemy is" +PHouseEnemys[Enemy];
+    document.getElementById("EnemyGet").innerHTML += "The enemy is" +PHouseEnemys[Enemy];
 
 }
 
