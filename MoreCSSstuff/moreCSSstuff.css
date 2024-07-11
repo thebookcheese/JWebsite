@@ -1,0 +1,81 @@
+@keyframes example {
+    0%   {background-color: darkgoldenrod; left:0px; top:10px;}
+    25%  {background-color:greenyellow; left: 25px; top: 35px;}
+    50%  {background-color:bisque; left:50px; top:60px;}
+    75%  {background-color: lightblue; left:75px; top:85px;}
+    100% {background-color: aqua; left: 100px; top: 110px;}
+}
+
+@keyframes example2 {
+    0%   {background-color: darkgoldenrod; left:10px; top:0px;}
+    25%  {background-color:greenyellow; left: 35px; top: 25px;}
+    50%  {background-color:bisque; left:60px; top:50px;}
+    75%  {background-color: lightblue; left:85px; top:75px;}
+    100% {background-color: aqua; left: 110px; top: 100px;}
+}
+
+@keyframes example3 {
+    0%   {background-color: darkgoldenrod; left:100px; top:110px;}
+    25%  {background-color:greenyellow; left: 75px; top: 85px;}
+    50%  {background-color:bisque; left:50px; top:60px;}
+    75%  {background-color: lightblue; left:25px; top:35px;}
+    100% {background-color: aqua; left: 0px; top: 10px;}
+}
+
+@keyframes example4 {
+    0%   {background-color: darkgoldenrod; left:110px; top:100px;}
+    25%  {background-color:greenyellow; left: 85px; top: 75px;}
+    50%  {background-color:bisque; left:50px; top:60px;}
+    75%  {background-color: lightblue; left: 35px; top:25px;}
+    100% {background-color: aqua; left: 10px; top: 0px;}
+}
+
+
+#Anim {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+#Anim2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: lightcoral;
+    animation-name: example2;
+    animation-duration: 4s;
+}
+
+#Anim3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: coral;
+    animation-name: example3;
+    animation-duration: 4s;
+}
+
+#Anim4 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: orange;
+    animation-name: example4;
+    animation-duration: 4s;
+}
+
+#Buton {
+    background-color: #000fb2;
+    font-size: 20px;
+    border-radius: 8px;
+
+}
+
+#Buton:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #000fb2; /* Green */
+}
