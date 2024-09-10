@@ -5,8 +5,13 @@ body {
 .Cloklie {
     width: 346px;
     height: 346px;
+    background-color:rgba(0,0,0,0)
 }
 
 .Upgrade {
     text-align: right;
+}
+
+.UpgradeSubtitle {
+    font-family: "Fascinate Inline", system-ui;
 }
