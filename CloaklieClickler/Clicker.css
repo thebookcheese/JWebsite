@@ -1,3 +1,10 @@
+@import url("../assets/fonts/comicsans.css");
+
+:root {
+    --Button1Visibility: shown;
+}
+
+
 body {
     background: url("BlueLines.jpeg");
 }
@@ -5,13 +12,18 @@ body {
 .Cloklie {
     width: 346px;
     height: 346px;
-    background-color:rgba(0,0,0,0)
+    background-color:rgba(0,0,0,0);
 }
 
-.Upgrade {
+#Upgrade {
     text-align: right;
+    font-family: "Comic Sans", sans-serif;
 }
 
-.UpgradeSubtitle {
-    font-family: "Fascinate Inline", system-ui;
+.ComicSans{
+    font-family: "Comic Sans", sans-serif;
+}
+
+.Button1{
+    visibility: var(--Button1Visibility);
 }
