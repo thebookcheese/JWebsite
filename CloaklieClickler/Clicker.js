@@ -3,7 +3,8 @@ let Cloklies = 0;
 let ClokliesAdd = 1;
 let ClickAddCount = 0;
 let ClickAddCost = 20;
-const Button1 = document.querySelector(".Button1");
+
+var Button1 = "";
 
 function Click() {
     Cloklies = Cloklies + ClokliesAdd; // Adds CloklieAdd to Cloklies (Increases amount of Cloklies)
@@ -23,6 +24,10 @@ function ClickAdd() {
             document.getElementById("CloklieCounter").innerHTML = Cloklies; // Updates the display
         }
     } else {
-        Button1.style.setProperty("--Button1Visibility", hidden); // Hides button when max upgrades reached
+        Button1.style = "display: none"; // Hides button when max upgrades reached
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    Button1 = document.getElementById("upgrades1");
+});
