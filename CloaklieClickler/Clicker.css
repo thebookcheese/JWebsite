@@ -1,10 +1,16 @@
 @import url("../assets/fonts/comicsans.css");
 
-.Button1{
-    --ButtonVisibility: visible;
-    visibility: var(--Button1Visibility);
+.Button1 {
+    visibility: visible;
 }
 
+#upgrades2 {
+    visibility: hidden;
+}
+
+#buy1 {
+    visibility: hidden;
+}
 
 body {
     background: url("BlueLines.jpeg");
