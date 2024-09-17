@@ -1,0 +1,35 @@
+.teko-header {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.teko-subtitle {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.teko-body {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 380;
+    font-style: normal;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#BasicMap {
+    border: 1px solid black;
+}
+
+#BasicCitiesMap {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
