@@ -1,0 +1,61 @@
+<head>
+</head>
+<body>
+    <style>
+        canvas {
+            background: lightblue;
+        }
+    </style>
+
+    <canvas id="myCanvas" width="1000" height="500"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        var PlayerX = 100;
+        var PlayerY = 200;
+
+        var RightPressed = false;
+        var LeftPressed = false;-
+
+
+        document.addEventListener("keydown", keyDownHandler, false);
+        document.addEventListener("keyup", keyUpHandler, false);
+
+        function keyDownHandler(e) {
+            if (e.code  == "ArrowRight") {
+                RightPressed = true;
+            } else if (e.code == 'ArrowLeft') {
+                LeftPressed = true;
+            }
+        }
+        function keyUpHandler(e) {
+            if (e.code  == "ArrowRight") {
+                RightPressed = false;
+            } else if (e.code == 'ArrowLeft') {
+                LeftPressed = false;
+            }
+        }
+
+        function DrawPlayer() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height)
+            ctx.beginPath();
+            ctx.rect(PlayerX, canvas.height-10,60 , 120);
+            ctx.fillStyle = "#eee120";
+            ctx.fill();
+            ctx.closePath();
+            
+            if (RightPressed == true) {
+                PlayerX += 3;
+            } else if (LeftPressed == true) {
+                PlayerX -= 3;
+            }
+        }
+
+        function Draw() {
+            DrawPlayer();
+        }
+        setInterval(Draw, 10);
+    </script>
+</body>

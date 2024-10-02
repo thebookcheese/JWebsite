@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>sdjunsfiouenjfkfneijkfnqeco</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        canvas {
+            background: #eee;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        let x = canvas.width / 2;
+        let y = canvas.height - 30;
+
+        let dx = 2;
+        let dy = -2;
+
+        function Draw() {
+            ctx.beginPath();
+            ctx.arc(x, y, 10, 0, Math.PI * 2);
+            ctx.fillStyle = "#0095DD";
+            ctx.fill();
+            ctx.closePath();
+            if (x + 10 >= canvas.width || x <= 0) {
+                dx = -dx
+                dx = dx - 1
+                dy = dy + 1
+                x += dx
+                y += dy
+            } else if (y - 10 >= canvas.height || y <= 0) {
+                dy = -dy
+                dx = dx -  1
+                dy = dy + 1
+                x += dx
+                y += dy
+            } else if (y == 0 && x == 320) {
+                y = 480
+                x = 0
+                x += dx
+                y += dy
+            } else {
+                x += dx
+                y += dy
+            }
+        }
+        setInterval(Draw, 10);
+    </script>
+</body>

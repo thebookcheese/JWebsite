@@ -1,3 +1,3 @@
 # JWebsite
-Just a little website i'm working on.
-URL: Jasperweb.pages.dev
+Just a thing I'm working on (and have been working on for > 1 year)
+URL: Jasperweb.uk
