@@ -4,11 +4,17 @@
         <canvas id="myChart"></canvas>
         <h3>GDP growth (% annually)</h3>
         <canvas id="GDPChange"></canvas>
+        <h3>GDP Growth of Landbang Rkipo Islands</h3>
+        <canvas id="AnnoyJude"></canvas>
+        <h3> Cool Polar Area Chart</h3>
+        <canvas id="PolarAreaChart"></canvas>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--CDN For Chart.js-->
     <script>
         const ctx = document.getElementById('myChart'); 
-        const ctx2 = document.getElementById('GDPChange')
+        const ctx2 = document.getElementById('GDPChange');
+        const ctx3 = document.getElementById('AnnoyJude');
+        const ctx4 = document.getElementById('PolarAreaChart')
 
         new Chart(ctx, {
             data: {
@@ -41,10 +47,10 @@
                 datasets: [{
                     type: 'line',
                     label: 'GDP growth of Zarechia (% annual)',
-                    data: [3,6, 1, -2, -2, 1, 1.5, 3,-1, -0.5, 5.421],
+                    data: [3,6, 1, -2, -2, 1, 1.5, 3,-1, -0.5, 5.421,3.1415962],
                     tension: 10,
                 }],
-                labels: ['2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020'],
+                labels: ['2010','2011','2013','2012','2014','2015','2016','2017','2018','2019','2020','2021'],
             },
                 options: {
                     animations: {
@@ -57,6 +63,28 @@
                         }
                     }
                 }
+        })
+
+        new Chart(ctx3, {
+            data: {
+                datasets : [{
+                    type: 'line',
+                    label: 'GDP growth of Landbang Rkipo Islands',
+                    data: [10, 5, 1, 0.5, 0, -0.5, -1, -5, -10,-20],
+                }],
+                labels: ['2000','2001','2002','2003','2004','2005','2006','2007','2008','2009'],
+            }
+        })
+
+        new Chart(ctx4, {
+                data: {
+                    datasets: [{
+                    type: 'polarArea',
+                    label: 'Population of Countries (in millions)',
+                    data: [36, 102, 82, 16.5],
+                    }],
+                labels: ['Zavechia','Ruensi','Arekiani','Osanabolo']
+            },
         })
     </script>
 </body>
