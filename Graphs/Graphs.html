@@ -1,0 +1,62 @@
+<body>
+    <div>
+        <h3>Deaths in the 2nd Paolo War</h3>
+        <canvas id="myChart"></canvas>
+        <h3>GDP growth (% annually)</h3>
+        <canvas id="GDPChange"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--CDN For Chart.js-->
+    <script>
+        const ctx = document.getElementById('myChart'); 
+        const ctx2 = document.getElementById('GDPChange')
+
+        new Chart(ctx, {
+            data: {
+                datasets: [{
+                    type: 'bar',
+                    label: 'Deaths in the 2nd Paolo War (Thousand)',
+                    data: [200, 500, 3000],
+                    borderWidth: 1
+                }, {
+                    type: 'line',
+                    label: 'Cool Line',
+                    data: [200,500, 3000],
+                    tension: -1, // Do mess around with this because it makes funny results
+                }],
+                labels: ['Zadrong',"Yoflort",'Graznio']
+                                
+
+        },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }  
+                }
+            }
+        });
+
+        new Chart(ctx2, {
+            data: {
+                datasets: [{
+                    type: 'line',
+                    label: 'GDP growth of Zarechia (% annual)',
+                    data: [3,6, 1, -2, -2, 1, 1.5, 3,-1, -0.5, 5.421],
+                    tension: 10,
+                }],
+                labels: ['2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020'],
+            },
+                options: {
+                    animations: {
+                        tension: {
+                            duration: 1000,
+                            easing: 'linear',
+                            from: 10,
+                            to: 5,
+                            loop: true,
+                        }
+                    }
+                }
+        })
+    </script>
+</body>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <head>
     <script src="RPGInHTML.js"></script>
+    <title> Padms < Padjs </title>
 </head>
 <body>
     <div id="town">
-        <button>Travel</button>
+        <button onclick="Travel()">Travel</button>
         <button onclick="Shop()">Shop</button>
         <div>
         <button onclick="Inventory()">Inventory</button>
@@ -13,5 +14,13 @@
     </div>
     <div id="swamp">
         hello you in swamp now
+        <button onclick="FindSwampEnemy()">Find Swamp Enemy</button>
+        <p id="Enemy"></p>
     </div>
+
+    <style>
+        #swamp {
+            display: none;
+        }
+    </style>
 </body>
