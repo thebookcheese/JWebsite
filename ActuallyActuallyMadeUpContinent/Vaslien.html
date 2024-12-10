@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Karesh.css" rel="stylesheet">
+    <title>Vaslien</title>
+</head>
+<body>
+    <h1>Vaslien (Vas - lie - in)</h1>
+    <u><h2>Main Stats</h2></u>
+    Population: 42.6 million (0.5% increase per year)
+    <p> Land Area: 67,500 km<sup>2</sup> </p>
+    <p> GDP: $831 billion</p>
+`
+    <u><h2>Graphs</h2></u>
+    <canvas id="Population" width="100" height="25"></canvas>
+    <canvas id="GrossDomesticProduct" width="100" height="25"></canvas>
+    <canvas id="PopulationPrediction" width="100" height="25"></canvas>
+
+
+    <h2>History</h2>
+    <h3>Founding of Vaslien</h3>
+    The Kingdom of Vaslien was founded after the collapse of the Saphonta Empire in 108 AD (After destruction) by Lord Sahasi who controlled most of the area at the time.
+    Lord Sahansi already had more loyalty from the citizens than the former emperor of the empire because he was closer and better understood the lives of the people. He pronounced himself King and held a meeting with representatives of local towns where he appointed his advisors.
+    He set up a new national court in 1012 AD to which he elected High Judges to give judgement who he replaced every 3 years. While this was happening, other countries were eyeing up the fertile land controlled by Vaslien. Lord Sahasi recognised this and set up a volunteer force to protect his country and - due to his popularity - ~300 people signed up in the first week.
+    Training the soldiers was difficult because of the lack of swordsmen or former soldier to teach them. As well as this, no blacksmiths in Vasilien knew how to forge swords. However, they persevered, hiring a teacher from bordering Achmati and a blacksmith who could forge swords from Ptasia. Vaslien had many large iron ore deposites that could be used to forge weapons and that helped in the making of the swords.
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--CDN For Chart.js-->
+    <script>
+        const ctx = document.getElementById('Population');
+        const ctx2 = document.getElementById('GrossDomesticProduct');
+        const ctx3 = document.getElementById("PopulationPrediction");
+
+        var Pop = 42.6;
+        var PopGrowth = 1.005;
+        var FutPopData = [42.6]
+        for (let i = 0; i < 10; i++) {
+            Pop = Pop * PopGrowth;
+            PopGrowth = PopGrowth * 1.001
+            FutPopData.push(Pop);
+        }
+
+        new Chart(ctx, {
+            data: {
+                datasets: [{
+                    type: 'bar',
+                    label: 'Population of Vaslien (Millions)',
+                    data: [20.2, 21.4, 23.6, 25.1, 27.9 , 30.3 , 32.6, 35.6, 38.6, 40, 42.6],
+                    borderWidth: 2,
+                }],
+                labels: ['2014',"2015",'2016','2017','2018','2019','2020','2021','2022','2023','2024'],
+                                
+
+        },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }  
+                }
+            }
+        })
+
+        new Chart(ctx2,{
+            data: {
+                datasets: [{
+                    type: 'line',
+                    label: 'GDP of Vaslien (Billions of $)',
+                    data: [620, 652, 692, 670, 693, 721, 753, 784, 793, 814, 831],
+                }],
+
+                labels: ['2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024'],
+            },
+        })      
+
+        new Chart(ctx3, {
+            data: {
+                datasets: [{
+                    type: 'line',
+                    label: 'Future Population of Vaslien (Millions)',
+                    data: FutPopData,
+                }],
+                labels: ['2024','2025','2026','2027','2028','2029', '2030', '2031','2032', '2033', '2034']
+            }
+        })
+
+    </script>
+</body>
+</html>

@@ -8,13 +8,20 @@
         <canvas id="AnnoyJude"></canvas>
         <h3> Cool Polar Area Chart</h3>
         <canvas id="PolarAreaChart"></canvas>
+        <h3> Funny Amination</h3>
+        <canvas id="AnimationsFunny"></canvas>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--CDN For Chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rough.js/2.1.1/rough.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-rough@latest/dist/chartjs-plugin-rough.min.js"></script>
     <script>
         const ctx = document.getElementById('myChart'); 
         const ctx2 = document.getElementById('GDPChange');
         const ctx3 = document.getElementById('AnnoyJude');
         const ctx4 = document.getElementById('PolarAreaChart')
+        const ctx5 = document.getElementById('AnimationFunny');
+
+        
 
         new Chart(ctx, {
             data: {
@@ -81,10 +88,11 @@
                     datasets: [{
                     type: 'polarArea',
                     label: 'Population of Countries (in millions)',
-                    data: [36, 102, 82, 16.5],
+                    data: [36, 102, 82, 16.5, 15],
                     }],
-                labels: ['Zavechia','Ruensi','Arekiani','Osanabolo']
+                labels: ['Zavechia','Ruensi','Arekiani','Osanabolo','Thesremeia']
             },
         })
+
     </script>
 </body>

@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000; // Define the port
 // Serve static files from the same directory
 app.use(express.static(__dirname));
 
-// Define routes
+// Define routes - I found dis
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });

@@ -1,0 +1,25 @@
+@import url("assets/fonts/comicsans.css");
+
+#Intro {
+    font-family: "Comic Sans", sans-serif;
+    text-align: center;
+}
+
+#Head {
+    text-decoration-line: underline overline;
+    font-family: "Jacquard 12", system-ui;
+    text-shadow: 2px 2px lightblue;
+    font-size: 40px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+html {
+    background-color: lightblue;
+}
