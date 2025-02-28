@@ -1,5 +1,5 @@
 function VendingMachine() {
-    Num = math.random(math.floor * 10);
+    Num = Math.random(Math.floor * 10);
     if (Num == 1 || Num == 2) {
         document.getElementById("Vend").src = "Sword.jpeg";
         setTimeout(function(){
