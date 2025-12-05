@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Canvas 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="1.css">
+    </head>
+    <body>
+        <canvas id="canvas" height="1000" width="1000"></canvas>
+
+        <script>
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext("2d");
+
+            function sleep(milliseconds) {
+                var start = new Date().getTime();
+                for (var i = 0; i < 1e7; i++) {
+                    if ((new Date().getTime() - start) > milliseconds){
+                        break;
+                    }
+                }
+            }
+
+            function DrawItaly() {
+                ctx.fillStyle = "#929292ff"
+                ctx.fillRect(0, 0, 1000, 1000)
+
+                ctx.fillStyle = "#3cb02fff";
+                ctx.fillRect(10, 10, 75, 100);
+
+                ctx.fillStyle = "white";
+                ctx.fillRect(85, 10, 75, 100)
+
+                ctx.fillStyle = "red";
+                ctx.fillRect(160, 10, 75, 100)
+
+                requestAnimationFrame(TurnInToFrance)
+            }
+            
+            let j = 10
+            function TurnInToItaly() {
+                ctx.fillStyle = "red"
+                ctx.fillRect(160, 10, j/10, 100)
+
+                ctx.fillStyle = "white"
+                ctx.fillRect(85, 10, j/10, 100)
+
+                ctx.fillStyle = "#3cb02fff";
+                ctx.fillRect(10, 10, j/10, 100)
+
+                
+                j += 10
+                if (j == 770) {
+                    j = 10
+                    sleep(500)
+                    window.requestAnimationFrame(TurnInToFrance)
+                } else {
+                    window.requestAnimationFrame(TurnInToItaly)
+                }
+            }
+
+            let a = 10;
+            function TurnInToPoland() {
+                ctx.fillStyle = "red"
+                ctx.fillRect(10, 10, a/10, 50)
+
+                ctx.fillStyle = "#ffffff"
+                ctx.fillRect(10, 60, a/10, 50)
+
+                a += 10
+
+                if (a == 2250) {
+                    a = 10
+                    sleep(500)
+                    window.requestAnimationFrame(TurnInToItaly)
+                } else {
+                    window.requestAnimationFrame(TurnInToPoland)
+                }
+            }
+
+
+
+            let i = 10;
+            function TurnInToFrance() {
+                ctx.fillStyle = "#18409bff"
+                ctx.fillRect(160, 10, i/10, 100)
+
+                ctx.fillStyle = "#ffffff"
+                ctx.fillRect(85, 10, i/10, 100)
+
+                ctx.fillStyle = "red";
+                ctx.fillRect(10, 10, i/10, 100)
+
+                i += 10
+                if (i == 770) {
+                    i = 10
+                    sleep(500)
+                    window.requestAnimationFrame(TurnInToGermany)
+                } else {
+                    window.requestAnimationFrame(TurnInToFrance)
+                }
+            }
+
+            let b = 10
+            function TurnInToGermany() {
+                ctx.fillStyle = "black"
+                ctx.fillRect(10, 10, b/10, 33)
+
+                ctx.fillStyle = "red"
+                ctx.fillRect(10, 43, b/10, 33)
+
+                ctx.fillStyle = "yellow"
+                ctx.fillRect(10, 76, b/10, 33)
+
+                b += 10
+
+                if (b == 2250) {
+                    b = 10
+                    sleep(500)
+                    window.requestAnimationFrame(TurnInToPoland)
+                } else {
+                    window.requestAnimationFrame(TurnInToGermany)
+                }
+            }
+
+
+            DrawItaly()
+
+        </script>
+    </body>
+</html>
